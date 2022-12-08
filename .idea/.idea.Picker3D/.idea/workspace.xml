@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1011c8b-5091-41ed-8463-71b2b9b1098a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Picker3D/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/OnLevelDestroyerCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/OnLevelDestroyerCommand.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/OnLevelLoaderCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/OnLevelLoaderCommand.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/LevelManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/LevelManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AddES3Prefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AddES3Prefab.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AutoSaveWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AutoSaveWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveMgrEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveMgrEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ClassTypeTemplate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ClassTypeTemplate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ComponentTypeTemplate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ComponentTypeTemplate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3EditorStyle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3EditorStyle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3EditorUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3EditorUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3GlobalReferencesEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3GlobalReferencesEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3InspectorInfoEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3InspectorInfoEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3PlayMakerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3PlayMakerEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Postprocessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Postprocessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3PrefabEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3PrefabEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ReferenceMgrEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ReferenceMgrEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ScriptableObjectTypeTemplate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ScriptableObjectTypeTemplate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3SettingsEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3SettingsEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3TypeTemplate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3TypeTemplate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Type_MaterialTemplate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Type_MaterialTemplate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ValueTypeTemplate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3ValueTypeTemplate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Window.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/HomeWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/HomeWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ReferencesWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ReferencesWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/SettingsWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/SettingsWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ToolsWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ToolsWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/TypesWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/TypesWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/PlayMaker/ES3PlayMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/PlayMaker/ES3PlayMaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Attributes/ES3Attributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Attributes/ES3Attributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Auto Save/ES3AutoSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Auto Save/ES3AutoSave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Auto Save/ES3AutoSaveMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Auto Save/ES3AutoSaveMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Debugging/ES3Debug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Debugging/ES3Debug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Crypto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Crypto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3File.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3IO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3IO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3InspectorInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3InspectorInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Prefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Prefab.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgrBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgrBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Reflection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Reflection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3SerializableDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3SerializableDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Spreadsheet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3Spreadsheet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3JSONReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3JSONReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3Reader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3Reader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3XMLReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3XMLReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Referencing/ES3GlobalReferences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Referencing/ES3GlobalReferences.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Settings/ES3DefaultSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Settings/ES3DefaultSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Settings/ES3Defaults.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Settings/ES3Defaults.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Settings/ES3Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Settings/ES3Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3FileStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3FileStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3PlayerPrefsStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3PlayerPrefsStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3ResourcesStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3ResourcesStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3Stream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Streams/ES3Stream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES32DArrayType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES32DArrayType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES33DArrayType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES33DArrayType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ArrayType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ArrayType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3CollectionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3CollectionType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3DictionaryType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3DictionaryType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3HashSetType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3HashSetType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ListType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ListType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3QueueType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3QueueType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3StackType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3StackType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3ComponentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3ComponentType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3ObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3ObjectType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3Property.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3Property.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3ScriptableObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3ScriptableObjectType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3Type.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3TypeMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3TypeMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3UnityObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/ES3UnityObjectType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/NET Types/ES3Type_Random.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/NET Types/ES3Type_Random.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_DateTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_DateTime.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ES3Ref.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ES3Ref.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_UIntPtr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_UIntPtr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_bool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_bool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_byte.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_byte.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_byteArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_byteArray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_char.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_char.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_decimal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_decimal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_double.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_double.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_enum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_enum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_float.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_float.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_int.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_int.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_intptr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_intptr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_long.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_long.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_sbyte.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_sbyte.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_short.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_short.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_string.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_string.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_uint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_uint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ulong.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ulong.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ushort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ushort.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedComponentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedComponentType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedObjectType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedScriptableObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedScriptableObjectType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedUnityObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedUnityObjectType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedValueType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedValueType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_BoxCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_BoxCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_BoxCollider2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_BoxCollider2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Camera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Camera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_CapsuleCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_CapsuleCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_EventSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_EventSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Image.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshFilter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_ParticleSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_ParticleSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_PolygonCollider2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_PolygonCollider2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_RawImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_RawImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Rigidbody.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Rigidbody.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_SphereCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_SphereCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Text.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Text.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Transform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Transform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_AnimationCurve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_AnimationCurve.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_AudioClip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_AudioClip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_BoneWeight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_BoneWeight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Bounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Bounds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_CollisionModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_CollisionModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Color.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Color.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Color32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Color32.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ColorBySpeedModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ColorBySpeedModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ColorOverLifetimeModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ColorOverLifetimeModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_EmissionModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_EmissionModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ExternalForcesModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ExternalForcesModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Flare.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Flare.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Font.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Font.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ForceOverLifetimeModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ForceOverLifetimeModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Gradient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Gradient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GradientAlphaKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GradientAlphaKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GradientColorKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GradientColorKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_InheritVelocityModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_InheritVelocityModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Keyframe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Keyframe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LayerMask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LayerMask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Light.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Light.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LightsModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LightsModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LimitVelocityOverLifetimeModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LimitVelocityOverLifetimeModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MainModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MainModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Material.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Material.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Matrix4x4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Matrix4x4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Mesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Mesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MinMaxCurve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MinMaxCurve.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MinMaxGradient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MinMaxGradient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_NoiseModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_NoiseModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_PhysicMaterial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_PhysicMaterial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_PhysicsMaterial2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_PhysicsMaterial2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Quaternion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Quaternion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Rect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Rect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RectTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RectTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RenderTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RenderTexture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RotationBySpeedModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RotationBySpeedModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RotationOverLifetimeModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RotationOverLifetimeModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Shader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Shader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ShapeModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ShapeModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SizeBySpeedModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SizeBySpeedModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SizeOverLifetimeModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SizeOverLifetimeModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SkinnedMeshRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SkinnedMeshRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Sprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Sprite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SpriteRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SpriteRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SubEmittersModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SubEmittersModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Texture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Texture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Texture2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Texture2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TextureSheetAnimationModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TextureSheetAnimationModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TrailModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TrailModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TriggerModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TriggerModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector2Int.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector2Int.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector3Int.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector3Int.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_VelocityOverLifetimeModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_VelocityOverLifetimeModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Web/ES3Cloud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Web/ES3Cloud.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Web/ES3WebClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Web/ES3WebClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3Binary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3Binary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3BinaryWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3BinaryWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3CacheWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3CacheWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3JSONWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3JSONWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3Writer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3Writer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3XMLWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Writers/ES3XMLWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/CD_Level.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/CD_Level.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/CD_Level.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/CD_Level.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPrefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPrefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPrefabs/level0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPrefabs/level0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPrefabs/level0.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPrefabs/level0.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/UnityObjects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/UnityObjects.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/UnityObjects/CD_Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/UnityObjects/CD_Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/UnityObjects/CD_Level.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/UnityObjects/CD_Level.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ValueObjects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ValueObjects.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ValueObjects/LevelData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ValueObjects/LevelData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ValueObjects/LevelData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ValueObjects/LevelData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/GameStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/GameStates.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/GameStates.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/GameStates.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TempAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TempAssets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Main Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Main Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/save.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/save.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IdOuoScCpFEW5ZiL5T2dhtFNoz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\berka\OneDrive\Masaüstü\Berkay_Stuff\ISU_Folder\DGD203_Introduction_to_Game_programming_C#\Tests\Picker3D -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\berka\OneDrive\Masaüstü\Berkay_Stuff\ISU_Folder\DGD203_Introduction_to_Game_programming_C#\Tests\Picker3D" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1011c8b-5091-41ed-8463-71b2b9b1098a" name="Changes" comment="" />
+      <created>1670508221010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670508221010</updated>
+      <workItem from="1670508232645" duration="65000" />
+      <workItem from="1670508335866" duration="100000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

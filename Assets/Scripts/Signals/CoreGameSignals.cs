@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Enums;
 using UnityEngine;
 using UnityEngine.Events;
-using Enums;
 
 namespace Signals
 {
@@ -17,6 +14,8 @@ namespace Signals
         {
             if (Instance != null && Instance != this)
             {
+                Debug.LogWarning("this: " + this.GetInstanceID());
+                Debug.LogWarning("Singleton: " + Instance.GetInstanceID());
                 Destroy(gameObject);
                 return;
             }
@@ -25,17 +24,15 @@ namespace Signals
         }
 
         #endregion
-    
-        public UnityAction<GameStates> onChanheGameState=delegate {  };
-        public UnityAction<int> onLevelInitialize=delegate {  };
-        public UnityAction onClearActiveLevel=delegate {  };
-        public UnityAction onLevelFailed=delegate {  };
-        public UnityAction onLevelSuccessful=delegate {  };
-        public UnityAction onNextLevel=delegate {  };
-        public UnityAction onRestartLevel=delegate {  };
-        public UnityAction onPlay=delegate {  };
-        public UnityAction onReset=delegate {  };
+
+        public UnityAction<GameStates> onChangeGameState = delegate { };
+        public UnityAction<int> onLevelInitialize = delegate { };
+        public UnityAction onClearActiveLevel = delegate { };
+        public UnityAction onLevelFailed = delegate { };
+        public UnityAction onLevelSuccessful = delegate { };
+        public UnityAction onNextLevel = delegate { };
+        public UnityAction onRestartLevel = delegate { };
+        public UnityAction onPlay = delegate { };
+        public UnityAction onReset = delegate { };
     }
 }
-
-
