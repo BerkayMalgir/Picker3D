@@ -7,14 +7,14 @@ namespace Data.ValueObjects
     public struct InputData
     {
         public float HorizontalInputSpeed;
-        public float ClampSpeed;
         public float2 ClampValues;
+        public float ClampSpeed;
 
-        public InputData(float horizontalInputSpeed, float clampSpeed, float2 clampValues)
+        public InputData(float horizontalInputSpeed, float2 clampValues, float clampSpeed)
         {
             HorizontalInputSpeed = horizontalInputSpeed;
-            ClampSpeed = clampSpeed;
             ClampValues = clampValues;
+            ClampSpeed = clampSpeed;
         }
     }
 }

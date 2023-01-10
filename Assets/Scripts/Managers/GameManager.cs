@@ -1,39 +1,48 @@
-﻿using Enums;
+using Enums;
 using Signals;
 using UnityEngine;
 
-namespace Managers
+public class GameManager : MonoBehaviour
 {
-    public class GameManager : MonoBehaviour
+    #region Self Variables
+
+    #region Serialized Variables
+
+    [SerializeField] private GameStates states;
+
+    #endregion
+
+    #endregion
+
+
+    private void Awake()
     {
-        #region Self Variables
+        Application.targetFrameRate = 60;
+    }
 
-        #region Serialized Variables
+    private void OnEnable()
+    {
+        SubscribeEvents();
+    }
 
-        [SerializeField] private GameStates states;
+    private void SubscribeEvents()
+    {
+        CoreGameSignals.Instance.onChangeGameState += OnChangeGameState;
+    }
 
-        #endregion
+    private void UnsubscribeEvents()
+    {
+        CoreGameSignals.Instance.onChangeGameState -= OnChangeGameState;
+    }
 
-        #endregion
+    private void OnDisable()
+    {
+        UnsubscribeEvents();
+    }
 
-
-        private void OnEnable() => SubscribeEvents();
-
-        private void SubscribeEvents()
-        {
-            CoreGameSignals.Instance.onChangeGameState += OnChangeGameState;
-        }
-
-        private void UnsubscribeEvents()
-        {
-            CoreGameSignals.Instance.onChangeGameState -= OnChangeGameState;
-        }
-
-        private void OnDisable() => UnsubscribeEvents();
-
-        private void OnChangeGameState(GameStates state)
-        {
-            states = state;
-        }
+    //[Button("Change State")]
+    private void OnChangeGameState(GameStates state)
+    {
+        states = state;
     }
 }

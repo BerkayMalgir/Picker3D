@@ -4,89 +4,87 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Handlers
+public class UIEventSubscriber : MonoBehaviour
 {
-    public class UIEventSubscriber : MonoBehaviour
+    #region Self Variables
+
+    #region Serialized Variables
+
+    [SerializeField] private UIEventSubscriptionTypes type;
+    [SerializeField] private Button button;
+
+    #endregion
+
+    #region Private Variables
+
+    [ShowInInspector] private UIManager _manager;
+
+    #endregion
+
+    #endregion
+
+    private void Awake()
     {
-        #region Self Variables
+        FindReferences();
+    }
 
-        #region Serialized Variables
+    private void FindReferences()
+    {
+        _manager = FindObjectOfType<UIManager>();
+    }
 
-        [SerializeField] private UIEventSubscriptionTypes type;
-        [SerializeField] private Button button;
+    private void OnEnable()
+    {
+        SubscribeEvents();
+    }
 
-        #endregion
-
-        #region Private Variables
-
-        [ShowInInspector] private UIManager _manager;
-
-        #endregion
-
-        #endregion
-
-        private void Awake()
+    private void SubscribeEvents()
+    {
+        switch (type)
         {
-            FindReferences();
-        }
-
-        private void FindReferences()
-        {
-            _manager = FindObjectOfType<UIManager>();
-        }
-
-        private void OnEnable()
-        {
-            SubscribeEvents();
-        }
-
-        private void SubscribeEvents()
-        {
-            switch (type)
-            {
-                case UIEventSubscriptionTypes.OnPlay:
+            case UIEventSubscriptionTypes.OnPlay:
                 {
                     button.onClick.AddListener(_manager.Play);
                     break;
                 }
-                case UIEventSubscriptionTypes.OnNextLevel:
+            case UIEventSubscriptionTypes.OnNextLevel:
                 {
                     button.onClick.AddListener(_manager.NextLevel);
                     break;
                 }
-                case UIEventSubscriptionTypes.OnRestartLevel:
+            case UIEventSubscriptionTypes.OnRestartLevel:
                 {
                     button.onClick.AddListener(_manager.RestartLevel);
                     break;
                 }
-            }
         }
+    }
 
-        private void UnSubscribeEvents()
+    private void UnSubscribeEvents()
+    {
+        switch (type)
         {
-            switch (type)
-            {
-                case UIEventSubscriptionTypes.OnPlay:
+            case UIEventSubscriptionTypes.OnPlay:
                 {
                     button.onClick.RemoveListener(_manager.Play);
                     break;
                 }
-                case UIEventSubscriptionTypes.OnNextLevel:
+            case UIEventSubscriptionTypes.OnNextLevel:
                 {
                     button.onClick.RemoveListener(_manager.NextLevel);
                     break;
                 }
-                case UIEventSubscriptionTypes.OnRestartLevel:
+            case UIEventSubscriptionTypes.OnRestartLevel:
                 {
                     button.onClick.RemoveListener(_manager.RestartLevel);
                     break;
                 }
-            }
-        }
-
-        private void OnDisable()
-        {
-            UnSubscribeEvents();
         }
     }
+
+    private void OnDisable()
+    {
+        UnSubscribeEvents();
+    }
 }
+

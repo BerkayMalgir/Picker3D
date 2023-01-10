@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Data.ValueObjects
 {
@@ -9,15 +8,15 @@ namespace Data.ValueObjects
     {
         public List<PoolData> PoolList;
 
-        public LevelData(List<PoolData> poolList)
+        public LevelData(List<PoolData> datas)
         {
-            PoolList = poolList;
+            PoolList = datas;
         }
     }
 
     [Serializable]
     public struct PoolData
     {
-        public int RequiredObjectCount;
+        public byte RequiredObjectCount;
     }
 }

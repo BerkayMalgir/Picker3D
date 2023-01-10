@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Data.UnityObjects;
 using Data.ValueObjects;
 using Keys;
@@ -14,15 +14,23 @@ namespace Managers
     {
         #region Self Variables
 
+        #region Public Variables
+
+        #endregion
+
+        #region Serialized Variables
+
+        #endregion
+
         #region Private Variables
 
-        [ShowInInspector] private InputData _data;
-        [ShowInInspector] private bool _isFirstTimeTouchTaken, _isAvailableForTouch, _isTouching;
+        [ShowInInspector] [Header("Data")] private InputData _data;
 
+        [Space] [ShowInInspector] private bool _isAvailableForTouch, _isFirstTimeTouchTaken, _isTouching;
 
         private float _currentVelocity; //ref Type
         private float3 _moveVector; //ref Type
-        private float3? _mousePosition; //ref Type
+        private Vector2? _mousePosition; //ref Type
 
         #endregion
 
@@ -38,6 +46,8 @@ namespace Managers
             return Resources.Load<CD_Input>("Data/CD_Input").Data;
         }
 
+        #region Event Subscriptions
+
         private void OnEnable()
         {
             SubscribeEvents();
@@ -45,12 +55,16 @@ namespace Managers
 
         private void SubscribeEvents()
         {
+            InputSignals.Instance.onEnableInput += OnEnableInput;
+            InputSignals.Instance.onDisableInput += OnDisableInput;
             CoreGameSignals.Instance.onReset += OnReset;
             CoreGameSignals.Instance.onPlay += OnPlay;
         }
 
         private void UnSubscribeEvents()
         {
+            InputSignals.Instance.onEnableInput -= OnEnableInput;
+            InputSignals.Instance.onDisableInput -= OnDisableInput;
             CoreGameSignals.Instance.onReset -= OnReset;
             CoreGameSignals.Instance.onPlay -= OnPlay;
         }
@@ -59,6 +73,8 @@ namespace Managers
         {
             UnSubscribeEvents();
         }
+
+        #endregion
 
         private void Update()
         {
@@ -69,19 +85,19 @@ namespace Managers
                 _isTouching = false;
 
                 InputSignals.Instance.onInputReleased?.Invoke();
-                Debug.LogWarning("Executed ---> onInputReleased");
+                //Debug.LogWarning("Executed ---> onInputReleased");
             }
 
             if (Input.GetMouseButtonDown(0) && !IsPointerOverUIElement())
             {
                 _isTouching = true;
                 InputSignals.Instance.onInputTaken?.Invoke();
-                Debug.LogWarning("Executed ---> onInputTaken");
+                //Debug.LogWarning("Executed ---> onInputTaken");
                 if (!_isFirstTimeTouchTaken)
                 {
                     _isFirstTimeTouchTaken = true;
                     InputSignals.Instance.onFirstTimeTouchTaken?.Invoke();
-                    Debug.LogWarning("Executed ---> onFirstTimeTouchTaken");
+                    //Debug.LogWarning("Executed ---> onFirstTimeTouchTaken");
                 }
 
                 _mousePosition = Input.mousePosition;
@@ -93,7 +109,7 @@ namespace Managers
                 {
                     if (_mousePosition != null)
                     {
-                        var mouseDeltaPos = (float3)Input.mousePosition - _mousePosition.Value;
+                        Vector2 mouseDeltaPos = (Vector2)Input.mousePosition - _mousePosition.Value;
 
 
                         if (mouseDeltaPos.x > _data.HorizontalInputSpeed)
@@ -112,7 +128,7 @@ namespace Managers
                             HorizontalInputClampNegativeSide = _data.ClampValues.x,
                             HorizontalInputClampPositiveSide = _data.ClampValues.y
                         });
-                        Debug.LogWarning($"Executed ---> onInputDragged x: {_moveVector.x}");
+                        //Debug.LogWarning($"Executed ---> onInputDragged{_moveVector.x}");
                     }
                 }
             }
@@ -121,6 +137,16 @@ namespace Managers
         private void OnPlay()
         {
             _isAvailableForTouch = true;
+        }
+
+        private void OnEnableInput()
+        {
+            _isAvailableForTouch = true;
+        }
+
+        private void OnDisableInput()
+        {
+            _isAvailableForTouch = false;
         }
 
         private bool IsPointerOverUIElement()
@@ -136,6 +162,7 @@ namespace Managers
 
         private void OnReset()
         {
+            _isTouching = false;
             _isAvailableForTouch = false;
         }
     }
