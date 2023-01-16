@@ -68,6 +68,7 @@ namespace Controllers.Pool
         private void Start()
         {
             SetRequiredAmountToText();
+            
         }
 
         private void OnActivateAllAnimations(byte stageID)
@@ -92,6 +93,7 @@ namespace Controllers.Pool
         private void SetCollectedAmountToText()
         {
             poolText.text = $"{_collectedCount}/{_requiredAmount}";
+           
         }
 
 
@@ -100,6 +102,7 @@ namespace Controllers.Pool
             if (!other.CompareTag("Collectable")) return;
             IncreaseCollectedAmount();
             SetCollectedAmountToText();
+            CalculateRatio();
         }
 
         private void IncreaseCollectedAmount() => _collectedCount++;
@@ -112,6 +115,7 @@ namespace Controllers.Pool
             if (!other.CompareTag("Collectable")) return;
             DecreaseCollectedAmount();
             SetCollectedAmountToText();
+            
         }
 
         public bool TakeStageResult(byte managerStageID)
@@ -122,6 +126,11 @@ namespace Controllers.Pool
             }
 
             return false;
+        }
+        public void CalculateRatio(int totalBalls=36)
+        {
+            float ratio = (float)_collectedCount / totalBalls;
+            Debug.Log(ratio);
         }
     }
 }

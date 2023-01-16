@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - StageArea
+  - Missile
+  - Collectable
+  - PoolArea
+  - FinalLevel
   layers:
   - Default
   - TransparentFX
