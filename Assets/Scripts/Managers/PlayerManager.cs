@@ -1,8 +1,7 @@
-using Commands.Player;
+using Command.Player;
 using Controllers.Player;
 using Data.UnityObjects;
 using Data.ValueObjects;
-using Keys;
 using Signals;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -15,8 +14,7 @@ namespace Managers
 
         #region Public Variables
 
-        public byte StageValue = 0;
-
+        internal byte StageID;
         internal ForceBallsToPoolCommand ForceCommand;
 
         #endregion
@@ -56,8 +54,8 @@ namespace Managers
 
         private void SendDataToControllers()
         {
-            movementController.GetMovementData(_data.MovementData);
-            meshController.GetMeshData(_data.ScaleData);
+            movementController.SetMovementData(_data.MovementData);
+            meshController.SetMeshData(_data.ScaleData);
         }
 
         private void OnEnable()
@@ -69,12 +67,11 @@ namespace Managers
         {
             InputSignals.Instance.onInputTaken += OnInputTaken;
             InputSignals.Instance.onInputReleased += OnInputReleased;
-            InputSignals.Instance.onInputDragged += OnInputDragged;
+            InputSignals.Instance.onInputDragged += movementController.UpdateInputParams;
             CoreGameSignals.Instance.onPlay += OnPlay;
             CoreGameSignals.Instance.onLevelSuccessful += OnLevelSuccessful;
             CoreGameSignals.Instance.onLevelFailed += OnLevelFailed;
             CoreGameSignals.Instance.onStageAreaEntered += OnStageAreaEntered;
-            CoreGameSignals.Instance.onFinishAreaEntered += OnFinishAreaEntered;
             CoreGameSignals.Instance.onStageAreaSuccessful += OnStageAreaSuccessful;
             CoreGameSignals.Instance.onReset += OnReset;
         }
@@ -83,12 +80,11 @@ namespace Managers
         {
             InputSignals.Instance.onInputTaken -= OnInputTaken;
             InputSignals.Instance.onInputReleased -= OnInputReleased;
-            InputSignals.Instance.onInputDragged -= OnInputDragged;
+            InputSignals.Instance.onInputDragged -= movementController.UpdateInputParams;
             CoreGameSignals.Instance.onPlay -= OnPlay;
             CoreGameSignals.Instance.onLevelSuccessful -= OnLevelSuccessful;
             CoreGameSignals.Instance.onLevelFailed -= OnLevelFailed;
             CoreGameSignals.Instance.onStageAreaEntered -= OnStageAreaEntered;
-            CoreGameSignals.Instance.onFinishAreaEntered -= OnFinishAreaEntered;
             CoreGameSignals.Instance.onStageAreaSuccessful -= OnStageAreaSuccessful;
             CoreGameSignals.Instance.onReset -= OnReset;
         }
@@ -106,11 +102,6 @@ namespace Managers
         private void OnInputTaken()
         {
             movementController.IsReadyToMove(true);
-        }
-
-        private void OnInputDragged(HorizontalnputParams inputParams)
-        {
-            movementController.UpdateInputParams(inputParams);
         }
 
         private void OnInputReleased()
@@ -133,23 +124,14 @@ namespace Managers
             movementController.IsReadyToPlay(false);
         }
 
-        private void OnStageAreaSuccessful(int value)
+        private void OnStageAreaSuccessful(byte stageID)
         {
-            StageValue = (byte)++value;
             movementController.IsReadyToPlay(true);
-            meshController.ScaleUpPlayer();
-            meshController.ShowUpText();
-            meshController.PlayConfetiParticle();
-        }
-
-        private void OnFinishAreaEntered()
-        {
-            movementController.IsReadyToPlay(false);
         }
 
         private void OnReset()
         {
-            StageValue = 0;
+            StageID = 0;
             movementController.OnReset();
             meshController.OnReset();
             physicsController.OnReset();

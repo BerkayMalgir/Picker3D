@@ -10,20 +10,18 @@ Material:
   m_Name: em_pleading
   m_Shader: {fileID: 4800000, guid: 0406db5a14f94604a8c57ccfbc9f3b46, type: 3}
   m_ValidKeywords:
-  - _EMISSION
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords:
-  - _ALPHABLEND_ON
   - _FLIPBOOKBLENDING_OFF
-  m_LightmapFlags: 0
+  m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
-  - DepthOnly
   - SHADOWCASTER
+  - DepthOnly
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -83,7 +81,7 @@ Material:
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
---- !u!114 &7419920714969378115
+--- !u!114 &316854899968209420
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

@@ -1,6 +1,7 @@
-using System;
+﻿using System;
 using Cinemachine;
 using Signals;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Managers
@@ -17,7 +18,7 @@ namespace Managers
 
         #region Private Variables
 
-        private Vector3 _initialPosition;
+        [ShowInInspector] private Vector3 _initialPosition;
 
         #endregion
 
@@ -42,7 +43,7 @@ namespace Managers
         private void UnSubscribeEvents()
         {
             CameraSignals.Instance.onSetCameraTarget -= OnSetCameraTarget;
-            CoreGameSignals.Instance.onReset += OnReset;
+            CoreGameSignals.Instance.onReset -= OnReset;
         }
 
         private void OnDisable()
@@ -52,17 +53,17 @@ namespace Managers
 
         private void Start()
         {
-            GetTheInitialPosition();
+            _initialPosition = GetInitialPos();
         }
 
-        private void GetTheInitialPosition()
+        private Vector3 GetInitialPos()
         {
-            _initialPosition = transform.localPosition;
+            return transform.position;
         }
 
         private void OnReset()
         {
-            transform.localPosition = _initialPosition;
+            transform.position = _initialPosition;
             virtualCamera.Follow = null;
         }
     }

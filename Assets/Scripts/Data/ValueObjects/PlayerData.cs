@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Data.ValueObjects
 {
@@ -7,6 +7,12 @@ namespace Data.ValueObjects
     {
         public MovementData MovementData;
         public ScaleData ScaleData;
+
+        public PlayerData(MovementData movementData, ScaleData scaleData)
+        {
+            MovementData = movementData;
+            ScaleData = scaleData;
+        }
     }
 
     [Serializable]
@@ -15,23 +21,26 @@ namespace Data.ValueObjects
         public float ForwardSpeed;
         public float SidewaysSpeed;
         public float ForwardForceCounter;
+        public float MiniGameMultiplier;
 
-        public MovementData(float forwardSpeed, float sidewaysSpeed, float forwardForceCounter)
+        public MovementData(float forwardSpeed, float sidewaysSpeed, float forwardForceCounter,
+            float miniGameMultiplier)
         {
             ForwardSpeed = forwardSpeed;
             SidewaysSpeed = sidewaysSpeed;
             ForwardForceCounter = forwardForceCounter;
+            MiniGameMultiplier = miniGameMultiplier;
         }
     }
 
     [Serializable]
     public struct ScaleData
     {
-        public float ScaleCounter;
+        public float ScaleFactor;
 
-        public ScaleData(float scaleCounter)
+        public ScaleData(float scaleFactor)
         {
-            ScaleCounter = scaleCounter;
+            ScaleFactor = scaleFactor;
         }
     }
 }

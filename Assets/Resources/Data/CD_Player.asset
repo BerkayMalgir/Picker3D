@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07213220c08489ca7aca125cda418df, type: 3}
+  m_Script: {fileID: 11500000, guid: 5582321d487343ffa25f4ef653198034, type: 3}
   m_Name: CD_Player
   m_EditorClassIdentifier: 
   Data:
     MovementData:
       ForwardSpeed: 10
-      SidewaysSpeed: 7
-      ForwardForceCounter: 3.15
+      SidewaysSpeed: 4
+      ForwardForceCounter: 3
+      MiniGameMultiplier: 1.35
     ScaleData:
-      ScaleCounter: 1.2
+      ScaleFactor: 1.2

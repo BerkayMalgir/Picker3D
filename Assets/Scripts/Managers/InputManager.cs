@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Data.UnityObjects;
 using Data.ValueObjects;
 using Keys;
@@ -14,23 +14,15 @@ namespace Managers
     {
         #region Self Variables
 
-        #region Public Variables
-
-        #endregion
-
-        #region Serialized Variables
-
-        #endregion
-
         #region Private Variables
 
-        [ShowInInspector] [Header("Data")] private InputData _data;
+        [ShowInInspector] private InputData _data;
+        [ShowInInspector] private bool _isFirstTimeTouchTaken, _isAvailableForTouch, _isTouching;
 
-        [Space] [ShowInInspector] private bool _isAvailableForTouch, _isFirstTimeTouchTaken, _isTouching;
 
         private float _currentVelocity; //ref Type
         private float3 _moveVector; //ref Type
-        private Vector2? _mousePosition; //ref Type
+        private float3? _mousePosition; //ref Type
 
         #endregion
 
@@ -46,8 +38,6 @@ namespace Managers
             return Resources.Load<CD_Input>("Data/CD_Input").Data;
         }
 
-        #region Event Subscriptions
-
         private void OnEnable()
         {
             SubscribeEvents();
@@ -55,16 +45,16 @@ namespace Managers
 
         private void SubscribeEvents()
         {
-            InputSignals.Instance.onEnableInput += OnEnableInput;
             InputSignals.Instance.onDisableInput += OnDisableInput;
+            InputSignals.Instance.onEnableInput += OnEnableInput;
             CoreGameSignals.Instance.onReset += OnReset;
             CoreGameSignals.Instance.onPlay += OnPlay;
         }
 
         private void UnSubscribeEvents()
         {
-            InputSignals.Instance.onEnableInput -= OnEnableInput;
             InputSignals.Instance.onDisableInput -= OnDisableInput;
+            InputSignals.Instance.onEnableInput -= OnEnableInput;
             CoreGameSignals.Instance.onReset -= OnReset;
             CoreGameSignals.Instance.onPlay -= OnPlay;
         }
@@ -73,8 +63,6 @@ namespace Managers
         {
             UnSubscribeEvents();
         }
-
-        #endregion
 
         private void Update()
         {
@@ -85,19 +73,16 @@ namespace Managers
                 _isTouching = false;
 
                 InputSignals.Instance.onInputReleased?.Invoke();
-                //Debug.LogWarning("Executed ---> onInputReleased");
             }
 
             if (Input.GetMouseButtonDown(0) && !IsPointerOverUIElement())
             {
                 _isTouching = true;
                 InputSignals.Instance.onInputTaken?.Invoke();
-                //Debug.LogWarning("Executed ---> onInputTaken");
                 if (!_isFirstTimeTouchTaken)
                 {
                     _isFirstTimeTouchTaken = true;
                     InputSignals.Instance.onFirstTimeTouchTaken?.Invoke();
-                    //Debug.LogWarning("Executed ---> onFirstTimeTouchTaken");
                 }
 
                 _mousePosition = Input.mousePosition;
@@ -109,7 +94,7 @@ namespace Managers
                 {
                     if (_mousePosition != null)
                     {
-                        Vector2 mouseDeltaPos = (Vector2)Input.mousePosition - _mousePosition.Value;
+                        var mouseDeltaPos = (float3)Input.mousePosition - _mousePosition.Value;
 
 
                         if (mouseDeltaPos.x > _data.HorizontalInputSpeed)
@@ -128,7 +113,6 @@ namespace Managers
                             HorizontalInputClampNegativeSide = _data.ClampValues.x,
                             HorizontalInputClampPositiveSide = _data.ClampValues.y
                         });
-                        //Debug.LogWarning($"Executed ---> onInputDragged{_moveVector.x}");
                     }
                 }
             }
@@ -162,7 +146,6 @@ namespace Managers
 
         private void OnReset()
         {
-            _isTouching = false;
             _isAvailableForTouch = false;
         }
     }

@@ -1,10 +1,13 @@
+﻿using System;
 using System.Collections.Generic;
 using Data.UnityObjects;
 using Data.ValueObjects;
 using DG.Tweening;
+using Managers;
 using Signals;
 using Sirenix.OdinInspector;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Controllers.Pool
@@ -15,17 +18,16 @@ namespace Controllers.Pool
 
         #region Serialized Variables
 
-        [SerializeField] private List<DOTweenAnimation> tweens = new List<DOTweenAnimation>();
-        [SerializeField] private TextMeshPro poolText;
         [SerializeField] private byte stageID;
-        [SerializeField] private new Renderer renderer;
+        [SerializeField] private TextMeshPro poolText;
+        [SerializeField] private List<DOTweenAnimation> tweenAnimations = new List<DOTweenAnimation>();
 
         #endregion
 
         #region Private Variables
 
         [ShowInInspector] private PoolData _data;
-        [ShowInInspector] private byte _collectedCount;
+        [ShowInInspector] private byte _requiredAmount, _collectedCount;
 
         #endregion
 
@@ -34,13 +36,13 @@ namespace Controllers.Pool
         private void Awake()
         {
             _data = GetPoolData();
+            SetRequiredAmount();
         }
 
         private PoolData GetPoolData()
         {
             return Resources.Load<CD_Level>("Data/CD_Level")
-                .Levels[(int) CoreGameSignals.Instance.onGetLevelValue?.Invoke()]
-                .PoolList[stageID];
+                .LevelList[(int)CoreGameSignals.Instance.onGetLevelID?.Invoke()].PoolList[stageID];
         }
 
         private void OnEnable()
@@ -50,29 +52,12 @@ namespace Controllers.Pool
 
         private void SubscribeEvents()
         {
-            CoreGameSignals.Instance.onStageAreaSuccessful += OnActivateTweens;
-            CoreGameSignals.Instance.onStageAreaSuccessful += OnChangeThePoolColor;
-        }
-
-        private void OnActivateTweens(int stageValue)
-        {
-            if (stageValue != stageID) return;
-            foreach (var tween in tweens)
-            {
-                tween.DOPlay();
-            }
-        }
-
-        private void OnChangeThePoolColor(int stageValue)
-        {
-            if (stageValue == stageID)
-                renderer.material.DOColor(new Color(0.1607842f, 0.6039216f, 0.1766218f), 1).SetEase(Ease.Linear);
+            CoreGameSignals.Instance.onStageAreaSuccessful += OnActivateAllAnimations;
         }
 
         private void UnSubscribeEvents()
         {
-            CoreGameSignals.Instance.onStageAreaSuccessful -= OnActivateTweens;
-            CoreGameSignals.Instance.onStageAreaSuccessful -= OnChangeThePoolColor;
+            CoreGameSignals.Instance.onStageAreaSuccessful -= OnActivateAllAnimations;
         }
 
         private void OnDisable()
@@ -85,14 +70,18 @@ namespace Controllers.Pool
             SetRequiredAmountToText();
         }
 
-        public bool TakeStageResult(byte stageValue)
+        private void OnActivateAllAnimations(byte stageID)
         {
-            if (stageValue == stageID)
+            if (stageID != this.stageID) return;
+            foreach (var animation in tweenAnimations)
             {
-                return _collectedCount >= _data.RequiredObjectCount;
+                animation.DOPlay();
             }
+        }
 
-            return false;
+        private void SetRequiredAmount()
+        {
+            _requiredAmount = _data.RequiredObjectCount;
         }
 
         private void SetRequiredAmountToText()
@@ -100,33 +89,39 @@ namespace Controllers.Pool
             poolText.text = $"0/{_data.RequiredObjectCount}";
         }
 
+        private void SetCollectedAmountToText()
+        {
+            poolText.text = $"{_collectedCount}/{_requiredAmount}";
+        }
+
+
         private void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Collectable")) return;
-            IncreaseCollectedCount();
-            SetCollectedCountToText();
+            IncreaseCollectedAmount();
+            SetCollectedAmountToText();
         }
 
-        private void SetCollectedCountToText()
-        {
-            poolText.text = $"{_collectedCount}/{_data.RequiredObjectCount}";
-        }
+        private void IncreaseCollectedAmount() => _collectedCount++;
 
-        private void IncreaseCollectedCount()
-        {
-            _collectedCount++;
-        }
+
+        private void DecreaseCollectedAmount() => _collectedCount--;
 
         private void OnTriggerExit(Collider other)
         {
             if (!other.CompareTag("Collectable")) return;
-            DecreaseTheCollectedCount();
-            SetCollectedCountToText();
+            DecreaseCollectedAmount();
+            SetCollectedAmountToText();
         }
 
-        private void DecreaseTheCollectedCount()
+        public bool TakeStageResult(byte managerStageID)
         {
-            _collectedCount--;
+            if (stageID == managerStageID)
+            {
+                return _collectedCount >= _requiredAmount;
+            }
+
+            return false;
         }
     }
 }

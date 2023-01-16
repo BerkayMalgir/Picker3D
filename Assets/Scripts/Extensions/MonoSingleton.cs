@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Extensions
 {
@@ -17,6 +17,7 @@ namespace Extensions
                     {
                         GameObject newGO = new GameObject();
                         _instance = newGO.AddComponent<T>();
+                        newGO.name = _instance.name;
                     }
                 }
 

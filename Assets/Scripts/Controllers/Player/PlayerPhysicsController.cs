@@ -1,3 +1,4 @@
+﻿using System;
 using Controllers.Pool;
 using DG.Tweening;
 using Managers;
@@ -20,6 +21,7 @@ namespace Controllers.Player
 
         #endregion
 
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("StageArea"))
@@ -27,31 +29,21 @@ namespace Controllers.Player
                 manager.ForceCommand.Execute();
                 CoreGameSignals.Instance.onStageAreaEntered?.Invoke();
                 InputSignals.Instance.onDisableInput?.Invoke();
+
                 DOVirtual.DelayedCall(3, () =>
                 {
                     var result = other.transform.parent.GetComponentInChildren<PoolController>()
-                        .TakeStageResult(manager.StageValue);
+                        .TakeStageResult(manager.StageID);
                     if (result)
                     {
-                        CoreGameSignals.Instance.onStageAreaSuccessful?.Invoke(manager.StageValue);
+                        CoreGameSignals.Instance.onStageAreaSuccessful?.Invoke(manager.StageID);
+                        UISignals.Instance.onSetStageColor?.Invoke(manager.StageID);
                         InputSignals.Instance.onEnableInput?.Invoke();
+                        manager.StageID++;
                     }
                     else CoreGameSignals.Instance.onLevelFailed?.Invoke();
                 });
                 return;
-            }
-
-            if (other.CompareTag("Finish"))
-            {
-                CoreGameSignals.Instance.onFinishAreaEntered?.Invoke();
-                InputSignals.Instance.onDisableInput?.Invoke();
-                CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
-                return;
-            }
-
-            if (other.CompareTag("MiniGame"))
-            {
-                //Write Mini Game Conditions
             }
         }
 
@@ -63,7 +55,7 @@ namespace Controllers.Player
             Gizmos.DrawSphere(new Vector3(position.x, position.y - 1.2f, position.z + 1f), 1.65f);
         }
 
-        internal void OnReset()
+        public void OnReset()
         {
         }
     }

@@ -1,60 +1,61 @@
+using System.Collections.Generic;
 using DG.Tweening;
 using Signals;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
 
-public class LevelPanelController : MonoBehaviour
+namespace Controllers.UI
 {
-    #region Self Variables
-
-    #region Serialized Variables
-
-    [SerializeField] private List<TextMeshProUGUI> levelTexts = new List<TextMeshProUGUI>();
-    [Space]
-    [SerializeField] private List<Image> stageImages = new List<Image>();
-
-    #endregion
-
-    #endregion
-
-    private void OnEnable()
+    public class LevelPanelController : MonoBehaviour
     {
-        SubscribeEvents();
-    }
+        #region Self Variables
 
-    private void SubscribeEvents()
-    {
-        UISignals.Instance.onSetNewLevelValue += OnSetNewLevelValue;
-        UISignals.Instance.onSetStageColor += OnSetStageColor;
-    }
+        #region Serialized Variables
 
-    private void UnSubscribeEvents()
-    {
-        UISignals.Instance.onSetNewLevelValue -= OnSetNewLevelValue;
-        UISignals.Instance.onSetStageColor -= OnSetStageColor;
-    }
+        [SerializeField] private List<TextMeshProUGUI> levelTexts = new List<TextMeshProUGUI>();
+        [Space] [SerializeField] private List<Image> stageImages = new List<Image>();
 
-    private void OnDisable()
-    {
-        UnSubscribeEvents();
-    }
+        #endregion
 
-    private void OnSetNewLevelValue(int levelValue)
-    {
+        #endregion
 
-        if (levelValue <= 0) levelValue = 1;
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
 
-        levelTexts[0].text = levelValue.ToString();
-        var value = ++levelValue;
-        levelTexts[1].text = value.ToString();
-    }
+        private void SubscribeEvents()
+        {
+            UISignals.Instance.onSetNewLevelValue += OnSetNewLevelValue;
+            UISignals.Instance.onSetStageColor += OnSetStageColor;
+        }
 
-    [Button("OnSetStageColor")]
-    private void OnSetStageColor(int stageValue)
-    {
-        stageImages[stageValue].DOColor(Color.red, .35f).SetEase(Ease.Linear);
+        private void UnSubscribeEvents()
+        {
+            UISignals.Instance.onSetNewLevelValue -= OnSetNewLevelValue;
+            UISignals.Instance.onSetStageColor -= OnSetStageColor;
+        }
+
+        private void OnDisable()
+        {
+            UnSubscribeEvents();
+        }
+
+        private void OnSetNewLevelValue(int levelValue)
+        {
+            if (levelValue <= 0) levelValue = 1;
+
+            levelTexts[0].text = levelValue.ToString();
+            var value = ++levelValue;
+            levelTexts[1].text = value.ToString();
+        }
+
+        [Button("OnSetStageColor")]
+        private void OnSetStageColor(int stageValue)
+        {
+            stageImages[stageValue].DOColor(Color.red, .35f).SetEase(Ease.Linear);
+        }
     }
 }
