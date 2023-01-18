@@ -45,6 +45,16 @@ namespace Controllers.Player
                 });
                 return;
             }
+
+            if (other.CompareTag("FinalLevel"))
+            {
+                CoreGameSignals.Instance.onLevelEnd?.Invoke();
+            }
+            if (other.CompareTag("Collectable"))
+            {
+                CoreGameSignals.Instance.onLevelCollect?.Invoke();
+            }
+            
         }
 
         private void OnDrawGizmos()

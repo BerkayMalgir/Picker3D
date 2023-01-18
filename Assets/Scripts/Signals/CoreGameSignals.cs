@@ -36,7 +36,8 @@ namespace Signals
         public UnityAction onPlay = delegate { };
         public UnityAction onReset = delegate { };
         public Func<int> onGetLevelID = delegate { return 0; };
-
+        public UnityAction onLevelEnd = delegate {  };
+        public UnityAction onLevelCollect = delegate {  };
         public UnityAction onStageAreaEntered = delegate { };
         public UnityAction<byte> onStageAreaSuccessful = delegate { };
     }

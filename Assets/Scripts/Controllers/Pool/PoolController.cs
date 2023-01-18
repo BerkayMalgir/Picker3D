@@ -102,7 +102,7 @@ namespace Controllers.Pool
             if (!other.CompareTag("Collectable")) return;
             IncreaseCollectedAmount();
             SetCollectedAmountToText();
-            CalculateRatio();
+            
         }
 
         private void IncreaseCollectedAmount() => _collectedCount++;
@@ -127,10 +127,6 @@ namespace Controllers.Pool
 
             return false;
         }
-        public void CalculateRatio(int totalBalls=36)
-        {
-            float ratio = (float)_collectedCount / totalBalls;
-            Debug.Log(ratio);
-        }
+        
     }
 }

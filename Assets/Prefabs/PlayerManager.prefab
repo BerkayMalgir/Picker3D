@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c83b0bdd84458bb666c85438f8744e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 0
   manager: {fileID: 6467165669467704083}
   rigidbody: {fileID: 6467165669467704084}
   collider: {fileID: 0}
